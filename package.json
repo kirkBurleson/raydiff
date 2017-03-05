@@ -1,0 +1,14 @@
+{
+  "name": "raydiff",
+  "author": "Kirk Burleson",
+  "license": "MIT",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "minimist": "^1.2.0",
+    "benchmarked": "^0.2.4"
+  }
+}
