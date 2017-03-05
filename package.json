@@ -1,8 +1,8 @@
 {
   "name": "raydiff",
-  "author": "Kirk Burleson",
-  "license": "MIT",
   "version": "0.2.0",
+  "description": "Filters array by removing matching elements contained in one or more additional arrays.",
+  "main": "raydiff.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
@@ -10,5 +10,26 @@
     "mocha": "^3.2.0",
     "minimist": "^1.2.0",
     "benchmarked": "^0.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirkBurleson/raydiff.git"
+  },
+  "keywords": [
+    "arr",
+    "array",
+    "array differ",
+    "array-differ",
+    "diff",
+    "differ",
+    "difference",
+    "filter array",
+    "arr-diff"
+  ],
+  "author": "Kirk Burleson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kirkBurleson/raydiff/issues"
+  },
+  "homepage": "https://github.com/kirkBurleson/raydiff#readme"  
 }
