@@ -23,17 +23,17 @@ own benchmark tests, on Mar 05, 2017:
 
 #benchmark\fixtures\long.js (94529 bytes)
 array-differ x 360 ops/sec ±0.12% (83 runs sampled)<br/>
-current x 507 ops/sec ±1.14% (57 runs sampled)<br/>
+arr-diff x 507 ops/sec ±1.14% (57 runs sampled)<br/>
 <b>raydiff x 861 ops/sec ±0.09% (88 runs sampled)</b><br/>
     
 #benchmark\fixtures\med.js (708 bytes)
 array-differ x 96,510 ops/sec ±0.96% (88 runs sampled)<br/>
-current x 215,471 ops/sec ±0.76% (88 runs sampled)<br/>
+arr-diff x 215,471 ops/sec ±0.76% (88 runs sampled)<br/>
 <b>raydiff x 545,171 ops/sec ±1.18% (88 runs sampled)</b><br/>
   
 #benchmark\fixtures\short.js (60 bytes)
 array-differ x 178,184 ops/sec ±0.96% (86 runs sampled)<br/>
-current x 311,669 ops/sec ±0.57% (90 runs sampled)<br/>
+arr-diff x 311,669 ops/sec ±0.57% (90 runs sampled)<br/>
 <b>raydiff x 1,418,764 ops/sec ±1.58% (86 runs sampled)</b><br/>
   
 # Author
