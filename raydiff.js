@@ -1,28 +1,20 @@
 function rdif() {
-  var all = flatten(Array.prototype.slice.call(arguments, 1));
-  var source = arguments[0];
-  var k;
-
-  all.forEach( function (v, i, a) {
-    k = source.indexOf(v);
-    if (k !== -1) {
-      source.splice(k, 1);
-    }
-  });
-
+  var source, k, z;
+  z = 1 << 31;
+  source = arguments[0];
+  work(Array.prototype.slice.call(arguments, 1));
   return source;
 
-  function flatten(arr) {
-    var x = [];
-
+  function work(arr) {
     arr.forEach( function (v, i, a) {
       if (Array.isArray(v)) {
-        x = x.concat(flatten(v));
-      } else
-        x.push(v);
+        work(v);
+      } else {
+        if (!((k = source.indexOf(v)) & z)) {
+          source.splice(k, 1);
+        }
+      }
     });
-
-    return x;
   }
 }
 
